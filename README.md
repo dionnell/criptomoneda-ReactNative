@@ -1,24 +1,33 @@
-# Aplicacion Movil Criptomonedas
+# App Cotizador de Criptomonedas
 
-Esta aplicacion hecha con react native, cosumimos la API de "cryptocompare" usando Axios. En un formulario conpuesto de 2 Pickers seleccionamos la moneda y la criptomoneda, presionamos el boton y la App nos entrega toda la informacion correspondiente de la criptomoneda en la moneda selecionada, segun los datos que nos entrega la API 
+Esta aplicación móvil permite consultar el valor actual de distintas criptomonedas en diferentes monedas fiat, utilizando la API de CryptoCompare.
 
-## Step 1: using app
+## Funcionalidades
 
-```sh
-# Using npm
-npm start
+- **Selección de moneda y criptomoneda:** El usuario puede elegir la moneda local (por ejemplo, USD, EUR, MXN) y la criptomoneda (por ejemplo, BTC, ETH, LTC) para cotizar.
+- **Consulta en tiempo real:** Obtiene el precio actualizado de la criptomoneda seleccionada en la moneda elegida.
+- **Visualización de resultados:** Muestra información relevante como precio, variación y otros datos de la cotización.
+- **Indicador de carga:** Muestra un spinner mientras se realiza la consulta a la API.
+- **Interfaz amigable:** Incluye un formulario sencillo y una imagen ilustrativa para mejorar la experiencia de usuario.
 
-# OR using Yarn
-yarn start
-```
+## Tecnologías utilizadas
 
-## Step 2: Build and run your app
+- React Native
+- Axios (para peticiones HTTP)
+- API de CryptoCompare
 
+## Estructura principal
 
-```sh
-# Using npm
-npm run android
+- `App.jsx`: Componente principal que gestiona el estado y la lógica de la aplicación.
+- `src/components/Header.jsx`: Encabezado de la aplicación.
+- `src/components/Formulario.jsx`: Formulario para seleccionar moneda y criptomoneda.
+- `src/components/Cotizacion.jsx`: Muestra los resultados de la cotización.
 
-# OR using Yarn
-yarn android
-```
+## Configuración
+
+1. Clona este repositorio.
+2. Instala las dependencias con `npm install`.
+3. Ejecuta la app en tu emulador o dispositivo físico con `npx react-native run-android` o `npx react-native run-ios`.
+
+---
+
